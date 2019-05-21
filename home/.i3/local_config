@@ -1,3 +1,5 @@
-exec ~/.screenlayout/laptop.sh
+#!/bin/sh
+~/.screenlayout/laptop.sh
 
-exec xkbcomp switch-ctrl_alt.xkb $DISPLAY
+# Swap ctrl and alt to reduce pinky strain
+xkbcomp ~/.i3/swap_ctrl_alt.xkb :0
