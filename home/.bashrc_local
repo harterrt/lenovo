@@ -1,0 +1,13 @@
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+# Make pyenv work
+export PATH="/home/harterrt/.pyenv/shims:${PATH}"
+export PYENV_ROOT="$HOME/.pyenv"
+eval "$(pyenv init -)"
+
+# Make cabal work
+export PATH=$HOME/.cabal/bin:$PATH
+
+# Make ctrl-shift-C interrupt instead of ctrl-c for consistent copy/paste
+stty intr \^C
+
